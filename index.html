@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,7 +36,18 @@
     <section class="subheader">
       <h1>Trouvez votre hébergement pour les vacances de rêve</h1>
       <p>En pleine ville ou en pleine nature</p>
-      recherche
+      <form class="search-form">
+          <div class="icon-search-block">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+          </div>
+          <input class="inp-search" type="search" placeholder="Saisissez la ville" id="site-search" name="q" />
+
+          <button class="button-search">
+            <span class="search-text">Rechercher</span>
+            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+          </button>
+      </form>
+      
     </section>
     <section class="filters">
       <h3 class="sort-title">Filters</h3>
@@ -66,7 +77,7 @@
         <p class="filter-text">Animaux autorisés</p>
       </a>
     </section>
-    <section id="hebergements-marseille" class="hebergements content">
+    <div id="hebergements-marseille" class="hebergements content">
       <p class="info-text">
         <span class="text-icon"><i class="fa-solid fa-info"></i> </span> Plus de
         500 logements disponibles dans cette ville
@@ -200,7 +211,7 @@
           </a>
         </aside>
       </div>
-    </section>
+    </div>
     <section id="activites-marseille" class="activites content">
       <h2>Activités a Marseille</h2>
       <div class="flex-grid">
