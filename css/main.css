@@ -19,7 +19,7 @@ h1 {
   font-size: 20px;
 }
 .mainheader {
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
   display: flex;
   justify-content: space-between;
 }
@@ -55,7 +55,7 @@ h1 {
 @media (max-width: 992px) {
   .mainheader {
     flex-direction: column;
-    border: 4px solid red;
+    /* border: 4px solid red; */
   }
   .logo {
     margin: 0 auto;
@@ -82,7 +82,7 @@ h1 {
 /*************************SUBHEADER*************************/
 
 .subheader {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   padding: var(--main-padding);
 }
 /* mobile */
@@ -136,7 +136,7 @@ h1 {
   display: inline;
 }
 @media (max-width: 768px) {
-  .fa-solid.fa-magnifying-glass  {
+  .fa-solid.fa-magnifying-glass {
     display: block;
   }
   .search-text {
@@ -146,7 +146,7 @@ h1 {
 /*************************FILTRES*************************/
 
 .filters {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   padding: var(--main-padding);
   display: flex;
   flex-wrap: wrap;
@@ -348,12 +348,7 @@ aside.grey-rounded-box {
 .rounded-box:hover {
   color: var(--main-blue);
 }
-/* tablette */
-@media (max-width: 992px) {
-  .rounded-box {
-    width: 100%;
-  }
-}
+
 /*div*/
 .rounded-box-image {
   overflow: hidden;
@@ -388,7 +383,14 @@ aside.grey-rounded-box {
 .stars .fa-star.checked {
   color: var(--main-blue);
 }
-
+/* tablette */
+@media (max-width: 992px) {
+  .rounded-box {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+}
 /**************************ROUNDED BOX HORIZONTAL*******************/
 .rounded-box.horizontal {
   display: flex;
@@ -412,6 +414,14 @@ aside.grey-rounded-box {
 .rounded-box.horizontal .stars {
   margin-top: auto;
 }
+/* tablette */
+@media (max-width: 992px) {
+  .rounded-box.horizontal {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+}
 /**************************ROUNDED BOX BASIC*******************/
 .flex-grid {
   display: flex;
@@ -419,14 +429,6 @@ aside.grey-rounded-box {
   flex-direction: column;
   max-height: 500px; /* so that items wrap */
   align-content: space-between;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .flex-grid {
-    border: 4px solid orange;
-    max-height: none;
-  }
 }
 
 .rounded-box.basic {
@@ -479,15 +481,30 @@ aside.grey-rounded-box {
   height: 210px;
 }
 
+/* tablette */
+@media (max-width: 992px) {
+  .rounded-box.horizontal {
+    /* border: 1px solid green; */
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+  }
+}
 /* mobile */
 @media (max-width: 768px) {
+  .flex-grid {
+    max-height: none;
+    display: block;
+  }
   .rounded-box.basic {
     max-width: 100%;
+
+    max-width: 500px;
+    margin: 10px auto;
   }
 
   a.rounded-box.basic,
-  a.rounded-box.basic a.rounded-box-image,
-  a.rounded-box.basic .rounded-box-image img {
+  a.rounded-box.basic a.rounded-box-image {
     height: 210px !important;
   }
 }
