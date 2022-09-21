@@ -358,11 +358,9 @@ aside.grey-rounded-box {
   position: relative;
 }
 .rounded-box-image img {
+  object-fit: cover;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
 }
 .rounded-box-desc {
   padding: 10px;
@@ -400,16 +398,13 @@ aside.grey-rounded-box {
 }
 .rounded-box.horizontal .rounded-box-image {
   height: 140px;
-  width: 130px;
+  width: 40%;
   overflow: hidden;
-}
-.rounded-box.horizontal .rounded-box-image img {
-  width: auto;
-  height: 140px;
 }
 .rounded-box.horizontal .rounded-box-desc {
   display: flex;
   flex-flow: column nowrap;
+  width: 60%;
 }
 .rounded-box.horizontal .stars {
   margin-top: auto;
