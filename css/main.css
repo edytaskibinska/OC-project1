@@ -311,16 +311,12 @@ aside.grey-rounded-box {
     background-color: var(--grey);
     border-radius: 0 0 25px 25px;
   }
-  article.grey-rounded-box {
-    flex-grow: 1;
-    max-width: 50%;
-    max-height: 682px;
-    overflow: hidden;
-  }
+  article.grey-rounded-box,
   aside.grey-rounded-box {
     flex-grow: 1;
     max-width: 50%;
     max-height: 682px;
+    overflow: hidden;
   }
 }
 
@@ -350,7 +346,7 @@ aside.grey-rounded-box {
     border-radius: 0px;
     flex-grow: 1;
     max-width: 100%;
-    padding: 40px 20px 0px 20px;
+    padding: 40px 20px 20px 20px;
   }
 }
 /**************************ROUNDED BOX*******************/
@@ -521,10 +517,10 @@ aside.grey-rounded-box {
   position: absolute;
   height: 410px;
 }
-.rounded-box.basic:first-child .rounded-box-image img,
+/* .rounded-box.basic:first-child .rounded-box-image img,
 .rounded-box.basic:nth-child(4) .rounded-box-image img {
   height: 410px;
-}
+} */
 .rounded-box.basic:nth-child(2),
 .rounded-box.basic:nth-child(6) {
   height: 250px;
@@ -535,10 +531,10 @@ aside.grey-rounded-box {
   height: 210px;
   position: absolute;
 }
-.rounded-box.basic:nth-child(2) .rounded-box-image img,
+/* .rounded-box.basic:nth-child(2) .rounded-box-image img,
 .rounded-box.basic:nth-child(6) .rounded-box-image img {
   height: 210px;
-}
+} */
 
 /* mobile */
 @media (max-width: 768px) {
@@ -554,6 +550,40 @@ aside.grey-rounded-box {
   a.rounded-box.basic,
   a.rounded-box.basic a.rounded-box-image {
     height: 194px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .flex-grid {
+    max-height: 412px;
+  }
+  .activites .rounded-box.basic {
+    transform: scale(0.9);
+    margin: 0;
+    max-width: 25%;
+  }
+  .rounded-box.basic:first-child,
+  .rounded-box.basic:nth-child(4) {
+    height: 410px;
+  }
+  .rounded-box.basic:nth-child(2),
+  .rounded-box.basic:nth-child(6) {
+    height: 234px;
+    top: 10px;
+  }
+  .rounded-box.basic:nth-child(3),
+  .rounded-box.basic:nth-child(5) {
+    height: 142px;
+  }
+  .rounded-box.basic:nth-child(3),
+  .rounded-box.basic:nth-child(6) {
+    position: relative;
+    top: 20px;
+  }
+  .rounded-box.basic:nth-child(2),
+  .rounded-box.basic:nth-child(5) {
+    position: relative;
+    top: 10px;
   }
 }
 
