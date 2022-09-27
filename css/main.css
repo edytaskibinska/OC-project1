@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
-/*************************GLOBAL*************************/
+/*************************GLOBAL SELECTOR*************************/
 
 * {
   box-sizing: border-box;
+}
+
+/*************************GLOBAL CSS VARIABLES*************************/
+
+:root {
   --main-blue: #0065fc;
   --clear-blue: #deebff;
   --grey: #f2f2f2;
@@ -234,13 +239,13 @@ h1 {
 .text-icon {
   border: 2px solid var(--grey);
   border-radius: 30px;
-  width: 24px;
+  width: 30px;
   height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 10px;
-  font-size: 12px;
+  font-size: 13px;
 }
 .content {
   padding: var(--main-padding);
@@ -425,7 +430,14 @@ aside.grey-rounded-box {
   max-width: 100%;
   margin: 28px 0px 34px 0px;
   width: 100%;
+  max-height: 148px;
 }
+.rounded-box.horizontal h3 {
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .rounded-box.horizontal .rounded-box-image {
   height: 140px;
   width: 40%;
@@ -603,7 +615,7 @@ footer {
 footer nav {
   display: flex;
 }
-footer h5 {
+footer h4 {
   font-size: 18px;
   margin-block-start: 10px;
   margin-block-end: 15px;
