@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
-/*************************GLOBAL SELECTOR*************************/
-
-div,
-section,
-article,
-a,
-p {
-  box-sizing: border-box;
-}
 
 /*************************GLOBAL CSS VARIABLES*************************/
 
@@ -19,6 +10,20 @@ p {
   --black: #000;
   --white: #fff;
   --main-padding: 20px 50px;
+}
+
+/*************************BOX SIZING*************************/
+
+div,
+section,
+article,
+a,
+p {
+  box-sizing: border-box;
+}
+/*************************GLOBAL STYLE*************************/
+body {
+  background-color: var(--white);
 }
 
 /*************************HEADER*************************/
