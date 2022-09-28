@@ -6,6 +6,7 @@
 :root {
   --main-blue: #0065fc;
   --clear-blue: #deebff;
+  --grey-medium: #cfcfcf;
   --grey: #f2f2f2;
   --black: #000;
   --white: #fff;
@@ -259,7 +260,7 @@ h1 {
 .text-icon {
   border: 2px solid var(--grey);
   border-radius: 30px;
-  width: 30px;
+  width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -288,6 +289,16 @@ h1 {
   }
   .info-text {
     padding: 0 20px 20px 20px;
+  }
+  .text-icon {
+    min-width: 24px;
+  }
+}
+/* mobile supp breakpoint - estetic effect*/
+
+@media (max-width: 478px) {
+  .info-text {
+    align-items: flex-start;
   }
 }
 
@@ -374,6 +385,9 @@ aside.grey-rounded-box {
     max-width: 100%;
     padding: 40px 20px 20px 20px;
   }
+  article.grey-rounded-box .rounded-box{
+    box-shadow: 0 8px 15px 4px var(--grey);
+  }
 }
 
 /**************************ROUNDED BOX*******************/
@@ -384,7 +398,7 @@ aside.grey-rounded-box {
   background-color: var(--white);
   overflow: hidden;
   width: calc(33% - 15px);
-  box-shadow: 0 8px 15px 4px #cfcfcf;
+  box-shadow: 0 8px 15px 4px var(--grey-medium);
   margin: 15px 0;
   display: block;
 }
@@ -575,11 +589,13 @@ aside.grey-rounded-box {
   .rounded-box.basic {
     max-width: 100%;
     margin: 10px auto 20px;
+    box-shadow: 0 8px 15px 4px var(--grey);
   }
   .flex-grid a.rounded-box.basic,
   .flex-grid a.rounded-box.basic a.rounded-box-image {
     height: 194px;
   }
+
 }
 /* tablette */
 @media (min-width: 769px) and (max-width: 992px) {
