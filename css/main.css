@@ -9,7 +9,6 @@
   --grey: #f2f2f2;
   --black: #000;
   --white: #fff;
-  --main-padding: 20px 50px;
 }
 
 /*************************BOX SIZING*************************/
@@ -102,7 +101,7 @@ h1 {
 /*************************SUBHEADER*************************/
 
 .subheader {
-  padding: var(--main-padding);
+  padding: 20px 50px;
 }
 
 /* mobile */
@@ -269,7 +268,7 @@ h1 {
   font-size: 13px;
 }
 .content {
-  padding: var(--main-padding);
+  padding: 20px 50px;
 }
 .flex-content {
   display: flex;
