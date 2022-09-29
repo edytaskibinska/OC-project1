@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
-
 /*************************GLOBAL CSS VARIABLES*************************/
 
 :root {
@@ -137,7 +136,7 @@ h1 {
   font-weight: 600;
   position: relative;
   left: 50px;
-  width: calc(100% - 147px);
+  width: calc(100% - 164px);
   font-size: 18px;
 }
 .button-search {
@@ -180,12 +179,14 @@ h1 {
 .filters {
   padding: 2px 50px;
   display: flex;
+}
+.filter-boxes {
+  display: flex;
   flex-wrap: wrap;
-
   align-items: center;
 }
 .sort-title {
-  margin: 0 38px 0 0;
+  margin: 20px 38px 0 0;
 }
 .filter-icon {
   border-radius: 30px;
@@ -239,11 +240,11 @@ h1 {
     margin: 10px 10px 10px 0;
   }
   .filters {
+    flex-direction: column;
     padding: 15px 20px;
   }
   .sort-title {
-    display: block;
-    width: 100%;
+    margin: 20px 38px 10px 0;
   }
 }
 
@@ -295,7 +296,6 @@ h1 {
   }
 }
 /* mobile supp breakpoint - estetic effect*/
-
 @media (max-width: 478px) {
   .info-text {
     align-items: flex-start;
@@ -332,9 +332,8 @@ aside.grey-rounded-box {
   font-size: 18px;
   font-weight: 600;
   display: block;
-  padding: 30px;
+  padding-top: 30px;
   width: 100%;
-  position: absolute;
   bottom: 0;
   left: 0;
 }
@@ -343,16 +342,20 @@ aside.grey-rounded-box {
 @media (max-width: 992px) {
   .see-more {
     font-size: 16px;
-    padding: 20px;
     text-align: center;
-    background-color: var(--grey);
     border-radius: 0 0 25px 25px;
+  }
+  .flex-content {
+    flex-direction: column;
+  }
+  article.grey-rounded-box {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   article.grey-rounded-box,
   aside.grey-rounded-box {
     flex-grow: 1;
-    max-width: 50%;
-    max-height: 682px;
+    max-width: 100%;
     overflow: hidden;
   }
 }
@@ -385,7 +388,7 @@ aside.grey-rounded-box {
     max-width: 100%;
     padding: 40px 20px 20px 20px;
   }
-  article.grey-rounded-box .rounded-box{
+  article.grey-rounded-box .rounded-box {
     box-shadow: 0 8px 15px 4px var(--grey);
   }
 }
@@ -437,9 +440,6 @@ aside.grey-rounded-box {
 
 /* tablette */
 @media (min-width: 769px) and (max-width: 992px) {
-  .rounded-box {
-    width: 100%;
-  }
   .marked-title {
     margin-bottom: 20px;
   }
@@ -488,9 +488,12 @@ aside.grey-rounded-box {
 .rounded-box.horizontal .stars {
   margin-top: auto;
 }
-
-/* mobile supp breakpoint*/
-@media (min-width: 571px) and (max-width: 768px) {
+/* tablette */
+@media (min-width: 769px) and (max-width: 992px) {
+  .marked-title {
+    width: 100%;
+    margin: 0 45px 14px 15px;
+  }
   aside.grey-rounded-box {
     display: flex;
     flex-wrap: wrap;
@@ -500,20 +503,20 @@ aside.grey-rounded-box {
     content: "";
     flex: auto;
   }
-  .marked-title {
-    width: 100%;
-    margin: 0 45px 14px 15px;
+  .rounded-box.horizontal {
+    width: calc(50% - 20px);
+    margin: 10px;
   }
+}
+
+/* mobile supp breakpoint*/
+@media (min-width: 571px) and (max-width: 768px) {
   .grey-rounded-title,
   .activites.content .grey-rounded-title {
     margin: 0 45px 14px 15px;
   }
   .see-more {
     margin: 0 45px 0 15px;
-  }
-  .rounded-box.horizontal {
-    width: calc(50% - 20px);
-    margin: 10px;
   }
 }
 
@@ -595,7 +598,6 @@ aside.grey-rounded-box {
   .flex-grid a.rounded-box.basic a.rounded-box-image {
     height: 194px;
   }
-
 }
 /* tablette */
 @media (min-width: 769px) and (max-width: 992px) {
