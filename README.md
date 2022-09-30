@@ -1,5 +1,9 @@
 # Note de synthèse – Nouveau site Booki
 
+Version de projet :
+https://course.oc-static.com/projects/DWJ_P2/DW+P2+28-09-2022+-+Scenario.pdf
+
+
 Voici l’ensemble des points techniques et fonctionnels à prendre en
 compte pour le développement du nouveau site Booki. L’ensemble de ces
 éléments ont été validés par l’équipe Produit, il est donc important de les
