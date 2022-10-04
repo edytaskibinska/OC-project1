@@ -138,6 +138,8 @@ h1 {
   left: 50px;
   width: calc(100% - 164px);
   font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .button-search {
   min-width: 50px;
